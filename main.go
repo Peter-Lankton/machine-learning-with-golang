@@ -211,10 +211,7 @@ func imputeCategorical(a string, col int, hdr []string, modes []string) string {
 }
 
 // convert converts a string into a slice of floats
-func convert(a string, isCat bool, index map[string][]int, varName string) ([]float64, []string) {
-	if isCat {
-		return convertCategorical(a, index, varName)
-	}
+func convert(a string, index map[string][]int, varName string) ([]float64, []string) {
 	// here we deliberately ignore errors, because the zero value of float64 is well, zero.
 	f, _ := strconv.ParseFloat(a, 64)
 	return []float64{f}, []string{varName}
@@ -261,8 +258,7 @@ func convertCategorical(a string, index map[string][]int, varName string) ([]flo
 }
 
 // hints is a slice of bools indicating whether it's a categorical variable
-func clean(hdr []string, data [][]string, indices []map[string][]int, hints []bool, ignored []string) (int, int, []float64, []float64, []string, []bool) {
-	modes := mode(indices)
+func clean(hdr []string, data [][]string, indices []map[string][]int, ignored []string) (int, int, []float64, []float64, []string, []bool) {
 	var Xs, Ys []float64
 	var newHints []bool
 	var newHdr []string
@@ -274,8 +270,8 @@ func clean(hdr []string, data [][]string, indices []map[string][]int, hints []bo
 			if hdr[j] == "Id" { // skip id
 				continue
 			}
-			if hdr[j] == "SalePrice" { // we'll put SalePrice into Ys
-				cxx, _ := convert(col, false, nil, hdr[j])
+			if hdr[j] == "watchedFullVideo" { // we'll put SalePrice into Ys
+				cxx, _ := convert(col, nil, hdr[j])
 				Ys = append(Ys, cxx...)
 				continue
 			}
@@ -284,17 +280,11 @@ func clean(hdr []string, data [][]string, indices []map[string][]int, hints []bo
 				continue
 			}
 
-			if hints[j] {
-				col = imputeCategorical(col, j, hdr, modes)
-			}
-			cxx, newHdrs := convert(col, hints[j], indices[j], hdr[j])
+			cxx, newHdrs := convert(col, indices[j], hdr[j])
 			Xs = append(Xs, cxx...)
 
 			if i == 0 {
 				h := make([]bool, len(cxx))
-				for k := range h {
-					h[k] = hints[j]
-				}
 				newHints = append(newHints, h...)
 				newHdr = append(newHdr, newHdrs...)
 			}
@@ -528,11 +518,8 @@ func exploration() {
 	mHandleErr(err)
 
 	fmt.Printf("Original Data: \nRows: %d, Cols: %d\n========\n", len(data), len(hdr))
-	c := cardinality(indices)
-	for i, h := range hdr {
-		if datahints[i] {
-			fmt.Printf("%v: %v\n", h, c[i])
-		}
+
+	for i := range hdr {
 		if i >= 5 {
 			fmt.Printf("    ⋮\n")
 			break
@@ -541,7 +528,7 @@ func exploration() {
 	fmt.Println("")
 
 	fmt.Printf("Building into matrices\n=============\n")
-	rows, cols, XsBack, YsBack, newHdr, _ := clean(hdr, data, indices, datahints, nil)
+	rows, cols, XsBack, YsBack, newHdr, _ := clean(hdr, data, indices, nil)
 	Xs := tensor.New(tensor.WithShape(rows, cols), tensor.WithBacking(XsBack))
 	fmt.Printf("Xs %v: \n%1.1s\n", Xs.Shape(), Xs)
 	fmt.Println("")
