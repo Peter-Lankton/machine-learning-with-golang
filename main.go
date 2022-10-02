@@ -5,8 +5,10 @@ import (
 	"fmt"
 	"github.com/pkg/errors"
 	"github.com/sajari/regression"
+	"golang.org/x/exp/rand"
 	"gonum.org/v1/gonum/mat"
 	"gonum.org/v1/gonum/stat"
+	"gonum.org/v1/gonum/stat/distuv"
 	"gonum.org/v1/plot"
 	"gonum.org/v1/plot/palette"
 	"gonum.org/v1/plot/plotter"
@@ -14,15 +16,16 @@ import (
 	"gonum.org/v1/plot/vg"
 	"gonum.org/v1/plot/vg/draw"
 	"gorgonia.org/tensor"
+	"gorgonia.org/tensor/native"
 	"gorgonia.org/vecf64"
 	"image/color"
 	"io"
 	"log"
 	"math"
-	"math/rand"
 	"os"
 	"sort"
 	"strconv"
+	"time"
 )
 
 func tryNumCat(a string, index map[string][]int, catStrs []string) []string {
@@ -267,10 +270,7 @@ func clean(hdr []string, data [][]string, indices []map[string][]int, ignored []
 	for i, row := range data {
 
 		for j, col := range row {
-			if hdr[j] == "Id" { // skip id
-				continue
-			}
-			if hdr[j] == "watchedFullVideo" { // we'll put SalePrice into Ys
+			if hdr[j] == "likes" { // we'll put SalePrice into Ys
 				cxx, _ := convert(col, nil, hdr[j])
 				Ys = append(Ys, cxx...)
 				continue
@@ -442,23 +442,8 @@ func plotHeatMap(corr mat.Matrix, labels []string) (p *plot.Plot, err error) {
 	return
 }
 
-func transform(it [][]float64, hdr []string, hints []bool) []int {
+func transform(it [][]float64, hdr []string) []int {
 	var transformed []int
-	for i, isCat := range hints {
-		if isCat {
-			continue
-		}
-		skewness := skew(it, i)
-		if skewness > 0.75 {
-			transformed = append(transformed, i)
-			log1pCol(it, i)
-		}
-	}
-	for i, h := range hints {
-		if !h {
-			scale(it, i)
-		}
-	}
 	return transformed
 }
 
@@ -512,7 +497,7 @@ func runRegression(Xs [][]float64, Ys []float64, hdr []string) (r *regression.Re
 }
 
 func exploration() {
-	f, err := os.Open("TikTok-toul_codes.csv")
+	f, err := os.Open("TikTok-toul_codes-outliers-removed.csv")
 	mHandleErr(err)
 	hdr, data, indices, err := ingest(f)
 	mHandleErr(err)
@@ -533,7 +518,7 @@ func exploration() {
 	fmt.Printf("Xs %v: \n%1.1s\n", Xs.Shape(), Xs)
 	fmt.Println("")
 
-	ofInterest := 19 // variable of interest is in column 19
+	ofInterest := 6 // variable of interest is in column 19
 	cef := CEF(YsBack, ofInterest, indices)
 	plt, err := plotCEF(cef)
 	mHandleErr(err)
@@ -558,36 +543,86 @@ func exploration() {
 	// figure out the correlation of things
 	m64, err := tensor.ToMat64(Xs, tensor.UseUnsafe())
 	mHandleErr(err)
-	fmt.Printf("header : ", newHdr)
-	fmt.Printf("m64: ", m64)
+	fmt.Printf("new header", newHdr)
+	corr := &mat.SymDense{}
+	stat.CorrelationMatrix(corr, m64, nil)
+	hm, err := plotHeatMap(corr, newHdr)
+	mHandleErr(err)
+	hm.Save(60*vg.Centimeter, 60*vg.Centimeter, "heatmap.png")
 
-	//corr := stat.CorrelationMatrix(nil, m64, nil)
-	//hm, err := plotHeatMap(corr, newHdr)
-	//mHandleErr(err)
-	//hm.Save(60*vg.Centimeter, 60*vg.Centimeter, "heatmap.png")
-	//
-	//// heatmaps are nice to look at, but are quite ridiculous.
-	//var tba []struct {
-	//	h1, h2 string
-	//	corr   float64
-	//}
-	//for i, h1 := range newHdr {
-	//	for j, h2 := range newHdr {
-	//		if c := corr.At(i, j); math.Abs(c) >= 0.5 && h1 != h2 {
-	//			tba = append(tba, struct {
-	//				h1, h2 string
-	//				corr   float64
-	//			}{h1: h1, h2: h2, corr: c})
-	//		}
-	//	}
-	//}
-	//
-	//fmt.Println("High Correlations:")
-	//for _, a := range tba {
-	//	fmt.Printf("\t%v-%v: %v\n", a.h1, a.h2, a.corr)
-	//}
+	// heatmaps are nice to look at, but are quite ridiculous.
+	var tba []struct {
+		h1, h2 string
+		corr   float64
+	}
+	for i, h1 := range newHdr {
+		for j, h2 := range newHdr {
+			if c := corr.At(i, j); math.Abs(c) >= 0.5 && h1 != h2 {
+				tba = append(tba, struct {
+					h1, h2 string
+					corr   float64
+				}{h1: h1, h2: h2, corr: c})
+			}
+		}
+	}
+
+	fmt.Println("High Correlations:")
+	for _, a := range tba {
+		fmt.Printf("\t%v-%v: %v\n", a.h1, a.h2, a.corr)
+	}
 }
 
 func main() {
 	exploration()
+	f, err := os.Open("TikTok-toul_codes-outliers-removed.csv")
+	mHandleErr(err)
+
+	hdr, data, indices, err := ingest(f)
+	rows, cols, XsBack, YsBack, newHdr, _ := clean(hdr, data, indices, nil)
+	Xs := tensor.New(tensor.WithShape(rows, cols), tensor.WithBacking(XsBack))
+	it, err := native.MatrixF64(Xs)
+	mHandleErr(err)
+
+	// transform the Ys
+	for i := range YsBack {
+		YsBack[i] = math.Log1p(YsBack[i])
+	}
+	//// transform the Xs
+	//transform(it, newHdr)
+
+	// partition the data
+	shuffle(it, YsBack)
+	testingRows := int(float64(rows) * 0.2)
+	trainingRows := rows - testingRows
+	testingSet := it[trainingRows:]
+	testingYs := YsBack[trainingRows:]
+	it = it[:trainingRows]
+	YsBack = YsBack[:trainingRows]
+
+	// do the regessions
+	r, stdErr := runRegression(it, YsBack, newHdr)
+	tdist := distuv.StudentsT{Mu: 0, Sigma: 1, Nu: float64(len(it) - len(newHdr) - 1), Src: rand.New(rand.NewSource(uint64(time.Now().UnixNano())))}
+	fmt.Printf("R^2: %1.3f\n", r.R2)
+	fmt.Printf("\tVariable \tCoefficient \tStdErr \tt-stat\tp-value\n")
+	fmt.Printf("\tIntercept: \t%1.5f \t%1.5f \t%1.5f \t%1.5f\n", r.Coeff(0), stdErr[0], r.Coeff(0)/stdErr[0], tdist.Prob(math.Abs(r.Coeff(0)/stdErr[0])))
+	for i, h := range newHdr {
+		b := r.Coeff(i + 1)
+		e := stdErr[i+1]
+		t := b / e
+		p := tdist.Prob(math.Abs(t))
+		fmt.Printf("\t%v: \t%1.5f \t%1.5f \t%1.5f \t%1.5f\n", h, b, e, t, p)
+	}
+
+	// VERY simple cross validation
+	var MSE float64
+	for i, row := range testingSet {
+		pred, err := r.Predict(row)
+		mHandleErr(err)
+		correct := testingYs[i]
+		eStar := correct - pred
+		e2 := eStar * eStar
+		MSE += e2
+	}
+	MSE /= float64(len(testingSet))
+	fmt.Printf("RMSE: %v\n", math.Sqrt(MSE))
 }
