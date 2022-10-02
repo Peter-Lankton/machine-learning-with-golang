@@ -1,0 +1,133 @@
+name,views,likes,comments,shares,bookmarks,watchedFullVideo,newFollowers,length,category,subject,hasCover,hasDescription,reply
+whats a scam saas,1623,211,21,1,6,50.96,5,15.18,opinion,software,0,0,0
+google tips,3264,112,0,0,33,41.69,4,6,info,software,0,0,0
+google interview,4013,99,6,0,2,61.26,3,5.25,humor,software,0,0,0
+job hop trend,1339,44,1,0,2,45.27,2,6.27,humor,career,0,1,0
+retro maximalist,2390,82,9,2,1,42.91,2,5.38,setup,mac,0,1,0
+intern squashes commit,3797,63,4,1,7,52.49,2,5.5,humor,software,0,0,0
+when intern reads,4560,156,4,0,2,58.53,2,5.55,humor,software,0,0,0
+cyber security underqualified duet,1355,82,2,1,2,56.33,1,6.36,humor,cyber security,0,0,0
+Life as a cyber security analyst,272,22,3,0,0,18,1,15,humor,cyber security,0,0,0
+uber hacked,765,17,0,0,2,29.69,1,7,info,cyber security,1,0,0
+running old os?,290,10,3,0,1,14,1,12.5,humor,software,0,1,1
+asked to shared doc,1934,48,1,0,1,39.46,1,6.04,humor,software,0,0,0
+build an app,294,11,4,0,3,8.9,1,17,info,software,1,0,0
+git info,269,16,2,0,1,22.91,1,7.8,info,software,0,0,0
+most used linux cmds,298,7,0,0,0,3.49,1,15,info ,software,0,0,0
+get back to studying,126,7,4,0,0,0,0,3.19,humor,career,0,1,0
+job hopping police car joke,1660,103,5,0,3,51.07,0,6.27,humor,career,1,1,0
+teams snitch,337,16,0,0,1,31.61,0,6,humor,career,0,1,0
+Reply wayoflao comment,237,18,4,0,0,0,0,42.81,info,career,0,1,1
+Reply good for juniors,235,16,1,0,1,3.6,0,52.03,info,career,0,1,1
+What about degree information?,1570,43,5,1,10,7.5,0,52.38,info,career,0,1,1
+What about program mgmt,233,12,3,0,1,0,0,46.83,info,career,0,1,1
+ROI,296,49,13,0,0,20.24,0,56.53,info,career,1,1,0
+bootcamp and 4yr degree,215,15,5,1,1,0,0,49.71,info,career,1,1,0
+High paying job,3975,388,17,19,64,0,0,53.45,info,career,1,1,0
+Know where recruiters are ,256,13,3,0,2,0,0,12,info,career,0,1,1
+How to network,275,13,5,0,0,0,0,13,info,career,0,1,1
+what is better programming or cert?,308,6,3,0,0,0,0,11.45,info,career,0,1,1
+find conventions,284,12,2,0,1,0,0,14,info,career,0,1,1
+what roles out of office work hours,254,10,1,0,1,0,0,30.46,info,career,0,1,1
+College?,428,37,10,0,1,9.07,0,56.98,info,career,1,1,1
+college location,352,23,1,0,1,3.81,0,29.91,info,career,0,1,1
+masters degree?,279,12,3,0,0,0,0,27.21,info,career,0,1,1
+hackathons?,296,15,2,0,0,0,0,22.92,info,career,0,1,1
+have fundamentals,328,10,3,0,0,0,0,29.74,info,career,0,1,0
+undergrad prestige,411,34,4,1,1,10.68,0,58.3,info,career,0,1,1
+Its fine to go into tech for $,5110,968,67,39,98,19.05,0,55.77,opinion,career,1,1,0
+Honest question,337,29,3,1,1,0,0,56.17,opinion,career,0,1,1
+access to people,281,26,6,0,4,0,0,56.77,opinion,career,1,1,0
+Big tip blog,436,56,5,3,8,0,0,56.63,opinion,career,1,1,0
+Retrofitting ,254,23,4,0,0,0,0,55.24,opinion,career,1,1,0
+gatekeeping in tech,357,20,1,0,0,0,0,10.38,opinion,career,0,1,0
+avoid jobs,458,29,4,1,1,0,0,51,opinion,career,1,1,0
+solve cves,237,6,1,0,0,0,0,7.75,humor,cyber security,0,1,0
+new security engineer,410,14,1,1,0,36.9,0,6.96,humor,cyber security,1,1,0
+don't worry about bug,310,9,0,0,0,17.78,0,8.71,humor,cyber security,1,1,0
+owasp when ofly,294,3,1,0,0,18,0,7,humor,cyber security,0,1,0
+when you're wfh,5200,89,0,0,0,63.06,0,7.26,humor,cyber security,0,0,0
+cryptography joke,510,10,0,0,0,38.1,0,5,humor,cyber security,0,0,0
+Uber hiring cyber security,461,14,1,0,0,31.6,0,5.85,humor,cyber security,0,0,0
+Security now,202,14,2,0,0,0,0,46,opinion,cyber security,0,1,1
+machine learning joke,10700,322,5,2,14,49.35,0,10.63,humor,data analytics,1,1,0
+data scientist ,2473,84,8,1,6,0,0,5.9,humor,data analytics,1,1,1
+FAANG data interview,1965,46,1,0,1,28.8,0,10.59,humor,data analytics,1,1,0
+data wranglers,339,11,2,0,0,27,0,5,humor,data analytics,0,1,0
+ml when ai,337,3,0,0,1,21,0,8,humor,data analytics,0,1,0
+Reply Josh Data Analytics,12700,1052,46,100,228,10.35,0,55.8,info,data analytics,1,1,1
+Reply Vid4 Data Analytics,546,26,6,2,1,5.2,0,55.45,info,data analytics,1,1,1
+Reply Which Course Data Analytics,5064,309,5,25,89,9.3,0,56.63,info,data analytics,1,1,1
+Reply Matthews Joy Diff Data Analytics Data Analyst,500,43,2,1,4,12.89,0,56.17,info,data analytics,1,1,1
+Reply amiro strong math background for data analytics,360,28,2,0,0,5.5,0,53,info,data analytics,1,1,1
+Reply degree data science?,290,25,3,0,1,0,0,53,info,data analytics,1,1,1
+Website for learning,250,12,2,2,0,0,0,42.77,info,data analytics,1,1,0
+Data analytics is ,2263,69,8,0,3,0,0,5.18,info,data analytics,1,1,0
+data analytics job?,331,18,4,0,1,0,0,31.07,info,data analytics,0,1,1
+need bachelors for analytics,725,13,2,0,0,1.36,0,69.45,info,data analytics,0,1,1
+real world use case machine learning,338,37,2,0,2,0,0,60,info,data analytics,1,1,0
+Reply what think about trilogy bootcamp,186,7,4,0,0,0,0,53,opinion,data analytics,1,1,1
+Duet data analytis,88,10,3,2,1,0,0,24.61,opinion,data analytics,0,1,1
+only pOc,553,21,10,0,0,27.97,0,8.17,humor,devops,1,1,0
+What is Devops and what do you do?,3444,143,8,14,19,16.82,0,55.61,info,devops,1,1,0
+What do I recommend for DevOps,1816,114,4,12,31,3.87,0,57.07,info,devops,1,1,0
+Don't need k8s,109,2,1,0,0,0,0,4,opinion,devops,0,1,0
+dev devops joke,427,23,3,0,1,0,0,9.56,humor,devops ,1,1,0
+A's since high school,405,38,5,2,0,0,0,10.47,humor,software,1,1,0
+Doing hw ,2312,111,16,6,2,0,0,5.64,humor,software,1,1,0
+not adding tests,258,13,3,0,0,0,0,6,humor,software,1,1,0
+web inspector,546,28,3,0,1,30.78,0,8.91,humor,software,1,1,1
+college conferences,304,12,1,1,1,0,0,4.9,humor,software,1,1,0
+weed out classes,708,39,7,1,3,32.94,0,13.19,humor,software,1,1,0
+coding interview,412,15,3,0,0,35.16,0,5.9,humor,software,0,1,0
+compsci freshmen,335,13,3,0,0,0,0,12.98,humor,software,1,1,0
+jr dev life,526,34,2,0,0,48.77,0,6.5,humor,software,1,1,0
+no thanks,11800,391,26,6,19,51.06,0,8.98,humor,software,1,1,0
+ask ta question,336,14,1,0,0,0,0,7.41,humor,software,1,1,0
+ask professor uchiha,6249,253,15,10,4,49.96,0,7.13,humor,software,1,1,0
+dev and pr,1273,20,2,0,0,0,0,7.38,humor,software,1,1,0
+layoffs and inmail,307,6,0,0,0,0,0,7,humor,software,1,1,0
+layoffs and peeking,1388,41,1,0,1,0,0,7.38,humor,software,1,1,0
+stack overflow down,821,17,1,0,0,35.37,0,5.5,humor,software,1,1,0
+blocking intern,829,31,1,0,0,37.28,0,5.41,humor,software,0,1,0
+block sr dev,300,10,1,0,0,15,0,9.61,humor,software,0,1,0
+golang sees stoplang,283,5,0,0,0,17,0,5.13,humor,software,0,1,0
+pythonoff slither,282,11,0,0,0,38.28,0,5,humor,software,0,1,0
+sr dev pushes to main,317,13,0,0,0,36,0,6,humor,software,0,1,0
+intern asking more q's,360,13,1,0,0,15,0,9,humor,software,0,1,0
+pager duty push,1116,32,4,0,1,47.99,0,5,humor,software,0,1,0
+tech lead song,1187,23,0,0,0,37.81,0,6.31,humor,software,0,1,0
+c++ joke,330,7,0,0,0,23.62,0,7.33,humor,software,0,1,0
+Senior dev spider man,92,1,0,0,0,17,0,7,humor,software,0,0,0
+lgtm senior dev,373,13,3,0,0,37.63,0,6,humor,software,0,0,0
+writing tests,369,10,1,1,0,42.11,0,5,humor,software,0,0,0
+programming languages to learn ,374,10,0,0,0,17.99,0,9.24,humor,software,1,0,0
+moving companies,1234,21,0,1,0,51.04,0,5.2,humor,software,0,0,0
+tech break,1996,42,2,0,0,48.96,0,5,humor,software,0,0,0
+using vi/vim,371,16,5,0,0,15.99,0,8,humor,software,0,0,0
+interns be like,331,10,0,0,0,43.71,0,5,humor,software,0,0,0
+add docs later ,294,6,1,0,0,30.1,0,6,humor,software,0,0,0
+when intern taps ur shoulder,168,5,0,0,0,38.37,0,6.5,humor,software,0,0,0
+burnt out overworked tech,147600,108,68,186,108,43.13,0,8.33,humor,software,1,0,0
+non target schools ,33600,2426,138,25,83,50.15,0,6.8,humor,software,1,0,0
+Reply to Sammy,236,6,4,0,0,3.5,0,57.91,info,software,0,1,1
+Example of Software Engineering,2220,243,8,10,32,19.33,0,57.63,info,software,1,1,0
+What Language do I use at Work,265,27,3,0,0,0,0,0,info,software,1,1,0
+Basic portfolio website,427,46,9,2,9,7.25,0,56.38,info,software,1,1,0
+Student seeking internship,248,9,3,0,1,0,0,13,info,software,0,1,1
+python better than cloud architecture,243,15,3,0,0,0,0,48,info,software,0,1,1
+avoid any languages?,295,17,3,0,0,3.72,0,57,info,software,0,1,1
+php?,275,9,1,0,0,0,0,12.44,info,software,0,1,1
+jr if know html css,1042,33,1,0,2,0,0,20.34,info,software,0,1,1
+heroku free duet,769,20,1,0,1,23.11,0,13,info,software,0,0,0
+How to use social media,270,6,1,0,2,5.99,0,15,info,software,0,0,0
+intro tech journey,249,14,2,0,0,3.69,0,43.81,info ,software,1,0,0
+maintainability more important,282,7,1,0,0,0,0,5,opinion,software,0,1,0
+bmw never want full electric cars ,347400,21000,479,290,417,65.88,0,6.57,opinion,software,0,0,0
+todays stats treadmill,386,11,0,0,0,20.92,0,10.26,healh,treadmill,0,1,0
+never regret underdesk treadmill,410,21,3,0,1,16,0,15.35,health,treadmill,0,1,0
+drop the link,280,9,1,0,1,31.6,0,12,health,treadmill,0,1,0
+get a treadmill,271,13,2,0,0,17,0,12,health,treadmill,0,1,0
+daily treadmill,295,12,0,0,0,17.55,0,11,health,treadmill,0,1,0
+ under desk treadmill stats,176,6,0,0,0,25.14,0,8.75,health,treadmill,0,0,0
+treadmill,101,7,1,0,0,13,0,12,info,treadmill,0,0,1
