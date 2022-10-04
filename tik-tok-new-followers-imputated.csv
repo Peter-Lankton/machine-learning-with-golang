@@ -1,0 +1,142 @@
+views,likes,comments,shares,bookmarks,watchedFullVideo,newFollowers,length,category,subject,hasCover,hasDescription,reply
+12700,1052,46,100,228,10.35,117,55.8,info,data analytics,1,1,1
+33600,2426,138,25,83,50.15,100,6.8,humor,software,1,0,0
+147600,108,68,186,108,43.13,100,8.33,humor,software,1,0,0
+5110,968,67,39,98,19.05,50,55.77,opinion,career,1,1,0
+10700,322,5,2,14,49.35,50,10.63,humor,data analytics,1,1,0
+347400,21000,479,290,417,65.88,25,6.57,opinion,software,0,0,0
+11800,391,26,6,19,51.06,20,8.98,humor,software,1,1,0
+3444,143,8,14,19,16.82,10,55.61,info,devops,1,1,0
+3975,388,17,19,64,18,10,53.45,info,career,1,1,0
+1623,211,21,1,6,50.96,5,15.18,opinion,software,0,0,0
+5064,309,5,25,89,9.3,5,56.63,info,data analytics,1,1,1
+3264,112,0,0,33,41.69,4,6,info,software,0,0,0
+4013,99,6,0,2,61.26,3,5.25,humor,software,0,0,0
+4560,156,4,0,2,58.53,3,5.55,humor,software,0,0,0
+1339,44,1,0,2,45.27,2,6.27,humor,career,0,1,0
+3797,63,4,1,7,52.49,2,5.5,humor,software,0,0,0
+101,7,1,0,0,13,4,12,info,treadmill,0,0,1
+269,16,2,0,1,22.91,4,7.8,info,software,0,0,0
+272,22,3,0,0,18,4,15,humor,cyber security,0,0,0
+290,10,3,0,1,14,4,12.5,humor,software,0,1,1
+294,11,4,0,3,8.9,4,17,info,software,1,0,0
+298,7,0,0,0,3.49,4,15,info,software,0,0,0
+765,17,0,0,2,29.69,4,7,info,cyber security,1,0,0
+1355,82,2,1,2,56.33,4,6.36,humor,cyber security,0,0,0
+1934,48,1,0,1,39.46,4,6.04,humor,software,0,0,0
+4879,197,0,0,4,18,4,5.71,humor,software,0,1,0
+88,10,3,2,1,13,4,24.61,opinion,data analytics,0,1,1
+92,1,0,0,0,17,4,7,humor,software,0,0,0
+109,2,1,0,0,18,4,4,opinion,devops,0,1,0
+126,7,4,0,0,18,4,3.19,humor,career,0,1,0
+168,5,0,0,0,38.37,4,6.5,humor,software,0,0,0
+176,6,0,0,0,25.14,4,8.75,health,treadmill,0,0,0
+186,7,4,0,0,18,4,53,opinion,data analytics,1,1,1
+200,7,0,0,0,9.91,4,29.81,home,office,1,1,0
+202,14,2,0,0,18,4,46,opinion,cyber security,0,1,1
+215,15,5,1,1,18,4,49.71,info,career,1,1,0
+233,12,3,0,1,9,4,46.83,info,career,0,1,1
+235,16,1,0,1,3.6,4,52.03,info,career,0,1,1
+236,6,4,0,0,3.5,4,57.91,info,software,0,1,1
+237,18,4,0,0,9,4,42.81,info,career,0,1,1
+237,6,1,0,0,9,4,7.75,humor,cyber security,0,1,0
+241,11,0,0,2,2.42,4,51,career,software,0,0,1
+243,15,3,0,0,9,4,48,info,software,0,1,1
+248,9,3,0,1,9,4,13,info,software,0,1,1
+249,11,2,0,1,41.61,4,11.49,humor,career,0,1,0
+249,14,2,0,0,3.69,4,43.81,info,software,1,0,0
+250,12,2,2,0,8,4,42.77,info,data analytics,1,1,0
+254,23,4,0,0,8,4,55.24,opinion,career,1,1,0
+254,10,1,0,1,8,4,30.46,info,career,0,1,1
+256,13,3,0,2,8,4,12,info,career,0,1,1
+258,13,3,0,0,8,4,6,humor,software,1,1,0
+265,4,1,0,1,33.86,4,7.31,humor,software,0,1,0
+265,27,3,0,0,20,4,0,info,software,1,1,0
+270,6,1,0,2,5.99,4,15,info,software,0,0,0
+271,13,2,0,0,17,4,12,health,treadmill,0,1,0
+275,13,5,0,0,6,4,13,info,career,0,1,1
+275,9,1,0,0,6,4,12.44,info,software,0,1,1
+279,12,3,0,0,10.34,4,27.21,info,career,0,1,1
+280,9,1,0,0,18.97,4,10.77,info,office,0,0,0
+280,9,1,0,1,31.6,4,12,health,treadmill,0,1,0
+281,26,6,0,4,31.6,4,56.77,opinion,career,1,1,0
+282,7,1,0,0,31.6,4,5,opinion,software,0,1,0
+282,11,0,0,0,38.28,4,5,humor,software,0,1,0
+283,5,0,0,0,17,4,5.13,humor,software,0,1,0
+284,12,2,0,1,17,4,14,info,career,0,1,1
+290,25,3,0,1,17,4,53,info,data analytics,1,1,1
+294,3,1,0,0,18,4,7,humor,cyber security,0,1,0
+294,6,1,0,0,30.1,4,6,humor,software,0,0,0
+295,17,3,0,0,3.72,4,57,info,software,0,1,1
+295,12,0,0,0,17.55,4,11,health,treadmill,0,1,0
+296,49,13,0,0,20.24,4,56.53,info,career,1,1,0
+296,15,2,0,0,0,4,22.92,info,career,0,1,1
+300,10,1,0,0,15,4,9.61,humor,software,0,1,0
+304,12,1,1,1,18,4,4.9,humor,software,1,1,0
+307,6,0,0,0,18,4,7,humor,software,1,1,0
+308,6,3,0,0,18,4,11.45,info,career,0,1,1
+310,9,0,0,0,17.78,4,8.71,humor,cyber security,1,1,0
+317,13,0,0,0,36,4,6,humor,software,0,1,0
+328,10,3,0,0,18,4,29.74,info,career,0,1,0
+330,7,0,0,0,23.62,4,7.33,humor,software,0,1,0
+331,18,4,0,1,18,4,31.07,info,data analytics,0,1,1
+331,10,0,0,0,43.71,4,5,humor,software,0,0,0
+335,13,3,0,0,18,4,12.98,humor,software,1,1,0
+336,14,1,0,0,18,4,7.41,humor,software,1,1,0
+337,29,3,1,1,18,4,56.17,opinion,career,0,1,1
+337,16,0,0,1,31.61,4,6,humor,career,0,1,0
+337,3,0,0,1,21,4,8,humor,data analytics,0,1,0
+338,37,2,0,2,18,4,60,info,data analytics,1,1,0
+339,11,2,0,0,27,4,5,humor,data analytics,0,1,0
+347,12,1,0,0,18,4,6.94,humor,career,0,1,0
+352,23,1,0,1,3.81,4,29.91,info,career,0,1,1
+357,20,1,0,0,18,4,10.38,opinion,career,0,1,0
+360,28,2,0,0,5.5,4,53,info,data analytics,1,1,1
+360,13,1,0,0,15,4,9,humor,software,0,1,0
+369,10,1,1,0,42.11,4,5,humor,software,0,0,0
+371,16,5,0,0,15.99,4,8,humor,software,0,0,0
+373,13,3,0,0,37.63,4,6,humor,software,0,0,0
+374,10,0,0,0,17.99,4,9.24,humor,software,1,0,0
+386,11,0,0,0,20.92,4,10.26,healh,treadmill,0,1,0
+405,38,5,2,0,18,4,10.47,humor,software,1,1,0
+410,14,1,1,0,36.9,4,6.96,humor,cyber security,1,1,0
+410,21,3,0,1,16,4,15.35,health,treadmill,0,1,0
+411,34,4,1,1,10.68,4,58.3,info,career,0,1,1
+412,15,3,0,0,35.16,4,5.9,humor,software,0,1,0
+427,23,3,0,1,18,4,9.56,humor,devops,1,1,0
+427,46,9,2,9,7.25,4,56.38,info,software,1,1,0
+428,37,10,0,1,9.07,4,56.98,info,career,1,1,1
+436,56,5,3,8,18,4,56.63,opinion,career,1,1,0
+458,29,4,1,1,18,4,51,opinion,career,1,1,0
+461,14,1,0,0,31.6,4,5.85,humor,cyber security,0,0,0
+484,20,4,0,5,4.6,4,58.74,info,career,1,1,0
+500,43,2,1,4,12.89,4,56.17,info,data analytics,1,1,1
+502,54,5,0,4,18,4,53,advice,career,1,1,0
+510,10,0,0,0,38.1,4,5,humor,cyber security,0,0,0
+526,34,2,0,0,48.77,4,6.5,humor,software,1,1,0
+546,26,6,2,1,5.2,4,55.45,info,data analytics,1,1,1
+546,28,3,0,1,30.78,4,8.91,humor,software,1,1,1
+553,21,10,0,0,27.97,4,8.17,humor,devops,1,1,0
+708,39,7,1,3,32.94,4,13.19,humor,software,1,1,0
+725,13,2,0,0,1.36,4,69.45,info,data analytics,0,1,1
+769,20,1,0,1,23.11,4,13,info,software,0,0,0
+821,17,1,0,0,35.37,4,5.5,humor,software,1,1,0
+829,31,1,0,0,37.28,4,5.41,humor,software,0,1,0
+1042,33,1,0,2,18,3,20.34,info,software,0,1,1
+1116,32,4,0,1,47.99,3,5,humor,software,0,1,0
+1187,23,0,0,0,37.81,3,6.31,humor,software,0,1,0
+1234,21,0,1,0,51.04,3,5.2,humor,software,0,0,0
+1273,20,2,0,0,18,3,7.38,humor,software,1,1,0
+1388,41,1,0,1,18,3,7.38,humor,software,1,1,0
+1511,12,2,0,0,61.12,3,9.7,humor,career,0,1,0
+1586,79,0,1,0,49.54,3,6.38,humor,news,0,1,0
+1660,103,5,0,3,51.07,3,6.27,humor,career,1,1,0
+1816,114,4,12,31,3.87,10,57.07,info,devops,1,1,0
+1965,46,1,0,1,28.8,12,10.59,humor,data analytics,1,1,0
+1996,42,2,0,0,48.96,2,5,humor,software,0,0,0
+2220,243,8,10,32,19.33,25,57.63,info,software,1,1,0
+2263,69,8,0,3,18,10,5.18,info,data analytics,1,1,0
+2312,111,16,6,2,18,10,5.64,humor,software,1,1,0
+2473,84,8,1,6,18,20,5.9,humor,data analytics,1,1,1
+5200,89,0,0,0,63.06,20,7.26,humor,cyber security,0,0,0
+6249,253,15,10,4,49.96,20,7.13,humor,software,1,1,0
